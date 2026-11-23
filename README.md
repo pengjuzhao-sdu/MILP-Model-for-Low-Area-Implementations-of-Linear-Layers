@@ -1,7 +1,7 @@
-# Beyond Stepwise Transformation: MILP Models for Low-Area Implementations of Linear Layers
+# Beyond Stepwise Transformation: MILP Model for Low-Area Implementations of Linear Layers
 
 This repository contains the code, input circuits, and implementation
-results accompanying the paper *Beyond Stepwise Transformation: MILP Models for
+results accompanying the paper *Beyond Stepwise Transformation: MILP Model for
 Low-Area Implementations of Linear Layers*.
 
 This artifact provides the source code, input circuits, and implementation
