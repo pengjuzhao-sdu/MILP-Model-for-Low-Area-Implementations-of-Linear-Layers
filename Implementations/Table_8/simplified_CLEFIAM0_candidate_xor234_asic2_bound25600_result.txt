@@ -1,0 +1,100 @@
+Solver status : OPTIMAL (2)
+Feasible      : True
+Solve time    : 18.461818 s
+Cost library  : ASIC2
+Gate costs    : XOR2=333, XOR3=466, XOR4=599
+Total cost    : 25562
+Kept nodes    : 52
+Used gates    :
+  XOR2        : 14
+  XOR3        : 14
+  XOR4        : 24
+  Total       : 52
+
+=== Outputs ===
+y[0] = x[124]    (t=4)
+y[1] = x[98]    (t=2)
+y[2] = x[128]    (t=5)
+y[3] = x[130]    (t=102)
+y[4] = x[125]    (t=102)
+y[5] = x[109]    (t=3)
+y[6] = x[131]    (t=4)
+y[7] = x[102]    (t=2)
+y[8] = x[99]    (t=2)
+y[9] = x[127]    (t=101)
+y[10] = x[126]    (t=102)
+y[11] = x[121]    (t=102)
+y[12] = x[116]    (t=4)
+y[13] = x[110]    (t=3)
+y[14] = x[108]    (t=2)
+y[15] = x[133]    (t=4)
+y[16] = x[72]    (t=8)
+y[17] = x[123]    (t=102)
+y[18] = x[129]    (t=102)
+y[19] = x[93]    (t=33)
+y[20] = x[119]    (t=100)
+y[21] = x[82]    (t=101)
+y[22] = x[103]    (t=2)
+y[23] = x[115]    (t=3)
+y[24] = x[106]    (t=3)
+y[25] = x[101]    (t=4)
+y[26] = x[87]    (t=18)
+y[27] = x[107]    (t=101)
+y[28] = x[83]    (t=3)
+y[29] = x[111]    (t=8)
+y[30] = x[60]    (t=2)
+y[31] = x[132]    (t=102)
+
+=== Final selected implementation (sorted by model-chosen topology) ===
+[t= 1] x[34] = x[6] ^ x[14] ^ x[15] ^ x[23]        # XOR4, cost=599, opt_id=2
+[t= 1] x[40] = x[14] ^ x[21]        # XOR2, cost=333, opt_id=0
+[t= 1] x[43] = x[4] ^ x[12]        # XOR2, cost=333, opt_id=0
+[t= 1] x[45] = x[12] ^ x[19]        # XOR2, cost=333, opt_id=0
+[t= 1] x[48] = x[23] ^ x[31]        # XOR2, cost=333, opt_id=0
+[t= 1] x[53] = x[7] ^ x[22] ^ x[23] ^ x[30]        # XOR4, cost=599, opt_id=5
+[t= 1] x[70] = x[9] ^ x[10] ^ x[19]        # XOR3, cost=466, opt_id=1
+[t= 2] x[35] = x[7] ^ x[15] ^ x[34]        # XOR3, cost=466, opt_id=1
+[t= 2] x[41] = x[16] ^ x[34]        # XOR2, cost=333, opt_id=0
+[t= 2] x[60] = x[5] ^ x[21] ^ x[30] ^ x[43]    (output y[30])    # XOR4, cost=599, opt_id=5
+[t= 2] x[80] = x[2] ^ x[9] ^ x[34]        # XOR3, cost=466, opt_id=1
+[t= 2] x[81] = x[20] ^ x[27] ^ x[45] ^ x[48]        # XOR4, cost=599, opt_id=7
+[t= 2] x[97] = x[34] ^ x[53]        # XOR2, cost=333, opt_id=0
+[t= 2] x[98] = x[1] ^ x[8] ^ x[24] ^ x[48]    (output y[1])    # XOR4, cost=599, opt_id=4
+[t= 2] x[99] = x[8] ^ x[53]    (output y[8])    # XOR2, cost=333, opt_id=0
+[t= 2] x[102] = x[7] ^ x[29] ^ x[30] ^ x[40]    (output y[7])    # XOR4, cost=599, opt_id=8
+[t= 2] x[103] = x[13] ^ x[22] ^ x[29] ^ x[43]    (output y[22])    # XOR4, cost=599, opt_id=6
+[t= 2] x[108] = x[5] ^ x[20] ^ x[28] ^ x[40]    (output y[14])    # XOR4, cost=599, opt_id=8
+[t= 3] x[49] = x[25] ^ x[41]        # XOR2, cost=333, opt_id=0
+[t= 3] x[57] = x[10] ^ x[17] ^ x[41]        # XOR3, cost=466, opt_id=1
+[t= 3] x[63] = x[3] ^ x[26] ^ x[35]        # XOR3, cost=466, opt_id=1
+[t= 3] x[83] = x[3] ^ x[28] ^ x[70] ^ x[80]    (output y[28])    # XOR4, cost=599, opt_id=11
+[t= 3] x[104] = x[35] ^ x[48] ^ x[53]        # XOR3, cost=466, opt_id=4
+[t= 3] x[106] = x[24] ^ x[35]    (output y[24])    # XOR2, cost=333, opt_id=0
+[t= 3] x[109] = x[40] ^ x[81] ^ x[108]    (output y[5])    # XOR3, cost=466, opt_id=2
+[t= 3] x[110] = x[13] ^ x[43] ^ x[81]    (output y[13])    # XOR3, cost=466, opt_id=1
+[t= 3] x[115] = x[53] ^ x[60] ^ x[102] ^ x[103]    (output y[23])    # XOR4, cost=599, opt_id=16
+[t= 4] x[90] = x[49] ^ x[57] ^ x[63]        # XOR3, cost=466, opt_id=2
+[t= 4] x[101] = x[0] ^ x[35] ^ x[49]    (output y[25])    # XOR3, cost=466, opt_id=1
+[t= 4] x[116] = x[18] ^ x[45] ^ x[63] ^ x[104]    (output y[12])    # XOR4, cost=599, opt_id=5
+[t= 4] x[124] = x[0] ^ x[34] ^ x[104]    (output y[0])    # XOR3, cost=466, opt_id=1
+[t= 4] x[131] = x[35] ^ x[102] ^ x[108] ^ x[115]    (output y[6])    # XOR4, cost=599, opt_id=8
+[t= 4] x[133] = x[97] ^ x[102]    (output y[15])    # XOR2, cost=333, opt_id=0
+[t= 5] x[128] = x[80] ^ x[101] ^ x[106] ^ x[124]    (output y[2])    # XOR4, cost=599, opt_id=14
+[t= 6] x[50] = x[7] ^ x[11] ^ x[12] ^ x[15]        # XOR4, cost=599, opt_id=6
+[t= 7] x[79] = x[3] ^ x[20] ^ x[43] ^ x[50]        # XOR4, cost=599, opt_id=3
+[t= 8] x[72] = x[41] ^ x[48]    (output y[16])    # XOR2, cost=333, opt_id=0
+[t= 8] x[111] = x[29] ^ x[79]    (output y[29])    # XOR2, cost=333, opt_id=0
+[t= 9] x[65] = x[1] ^ x[3] ^ x[63]        # XOR3, cost=466, opt_id=1
+[t=18] x[87] = x[0] ^ x[8] ^ x[17] ^ x[65]    (output y[26])    # XOR4, cost=599, opt_id=4
+[t=33] x[93] = x[48] ^ x[65] ^ x[70]    (output y[19])    # XOR3, cost=466, opt_id=3
+[t=100] x[119] = x[50] ^ x[70] ^ x[80] ^ x[81]    (output y[20])    # XOR4, cost=599, opt_id=26
+[t=101] x[82] = x[3] ^ x[21] ^ x[28] ^ x[50]    (output y[21])    # XOR4, cost=599, opt_id=5
+[t=101] x[107] = x[1] ^ x[18] ^ x[27] ^ x[80]    (output y[27])    # XOR4, cost=599, opt_id=3
+[t=101] x[127] = x[0] ^ x[9] ^ x[16] ^ x[48]    (output y[9])    # XOR4, cost=599, opt_id=4
+[t=102] x[121] = x[81] ^ x[90] ^ x[116] ^ x[119]    (output y[11])    # XOR4, cost=599, opt_id=10
+[t=102] x[123] = x[17] ^ x[97] ^ x[99] ^ x[106]    (output y[17])    # XOR4, cost=599, opt_id=14
+[t=102] x[125] = x[79] ^ x[81] ^ x[116]    (output y[4])    # XOR3, cost=466, opt_id=2
+[t=102] x[126] = x[1] ^ x[24] ^ x[57] ^ x[97]    (output y[10])    # XOR4, cost=599, opt_id=5
+[t=102] x[129] = x[8] ^ x[18] ^ x[49] ^ x[127]    (output y[18])    # XOR4, cost=599, opt_id=3
+[t=102] x[130] = x[90] ^ x[97]    (output y[3])    # XOR2, cost=333, opt_id=0
+[t=102] x[132] = x[104] ^ x[115]    (output y[31])    # XOR2, cost=333, opt_id=0

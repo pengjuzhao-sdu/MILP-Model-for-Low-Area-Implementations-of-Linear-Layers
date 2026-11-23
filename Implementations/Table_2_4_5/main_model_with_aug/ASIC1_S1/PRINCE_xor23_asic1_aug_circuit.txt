@@ -1,0 +1,57 @@
+# solver_status = INTERRUPTED (11)
+# feasible = True
+# optimal = False
+# total_cost = 4500
+# gate_count = 20
+# best_incumbent_time = 1.117056s
+# problem_build_time_sec = N/A
+# model_build_time_sec = N/A
+# pre_solve_time_sec = N/A
+# solve_time_sec = N/A
+# total_runtime_sec = N/A
+# best_first_seen_solve_time_sec = 1.117056
+# best_first_seen_total_time_sec = N/A
+# used_xor2 = 16
+# used_xor3 = 4
+# used_xor4 = 0
+# note = internal gates may be XOR2 / XOR3
+
+# Internal Gates
+x[16] = x[4] ^ x[12]    # order=1, XOR2, cost=200, function=0000100000001000 (x[4] ^ x[12])
+x[17] = x[0] ^ x[8] ^ x[12]    # order=1, XOR3, cost=325, function=1000000010001000 (x[0] ^ x[8] ^ x[12])
+x[18] = x[1] ^ x[5] ^ x[13]    # order=1, XOR3, cost=325, function=0100010000000100 (x[1] ^ x[5] ^ x[13])
+x[19] = x[9] ^ x[13]    # order=1, XOR2, cost=200, function=0000000001000100 (x[9] ^ x[13])
+x[20] = x[2] ^ x[6] ^ x[14]    # order=1, XOR3, cost=325, function=0010001000000010 (x[2] ^ x[6] ^ x[14])
+x[21] = x[10] ^ x[14]    # order=1, XOR2, cost=200, function=0000000000100010 (x[10] ^ x[14])
+x[22] = x[3] ^ x[7] ^ x[15]    # order=1, XOR3, cost=325, function=0001000100000001 (x[3] ^ x[7] ^ x[15])
+x[23] = x[11] ^ x[15]    # order=1, XOR2, cost=200, function=0000000000010001 (x[11] ^ x[15])
+x[24] = x[16] ^ x[17]    # order=2, XOR2, cost=200, function=1000100010000000 (x[0] ^ x[4] ^ x[8])
+x[25] = x[18] ^ x[19]    # order=2, XOR2, cost=200, function=0100010001000000 (x[1] ^ x[5] ^ x[9])
+x[26] = x[20] ^ x[21]    # order=2, XOR2, cost=200, function=0010001000100000 (x[2] ^ x[6] ^ x[10])
+x[27] = x[22] ^ x[23]    # order=2, XOR2, cost=200, function=0001000100010000 (x[3] ^ x[7] ^ x[11])
+x[28] = x[0] ^ x[16]    # order=2, XOR2, cost=200, function=1000100000001000 (x[0] ^ x[4] ^ x[12])
+x[29] = x[8] ^ x[16]    # order=2, XOR2, cost=200, function=0000100010001000 (x[4] ^ x[8] ^ x[12])
+x[30] = x[1] ^ x[19]    # order=2, XOR2, cost=200, function=0100000001000100 (x[1] ^ x[9] ^ x[13])
+x[31] = x[5] ^ x[19]    # order=2, XOR2, cost=200, function=0000010001000100 (x[5] ^ x[9] ^ x[13])
+x[32] = x[2] ^ x[21]    # order=2, XOR2, cost=200, function=0010000000100010 (x[2] ^ x[10] ^ x[14])
+x[33] = x[6] ^ x[21]    # order=2, XOR2, cost=200, function=0000001000100010 (x[6] ^ x[10] ^ x[14])
+x[34] = x[3] ^ x[23]    # order=2, XOR2, cost=200, function=0001000000010001 (x[3] ^ x[11] ^ x[15])
+x[35] = x[7] ^ x[23]    # order=2, XOR2, cost=200, function=0000000100010001 (x[7] ^ x[11] ^ x[15])
+
+# Outputs
+y[0] = x[29]    # 0000100010001000 (x[4] ^ x[8] ^ x[12])
+y[1] = x[30]    # 0100000001000100 (x[1] ^ x[9] ^ x[13])
+y[2] = x[20]    # 0010001000000010 (x[2] ^ x[6] ^ x[14])
+y[3] = x[27]    # 0001000100010000 (x[3] ^ x[7] ^ x[11])
+y[4] = x[24]    # 1000100010000000 (x[0] ^ x[4] ^ x[8])
+y[5] = x[31]    # 0000010001000100 (x[5] ^ x[9] ^ x[13])
+y[6] = x[32]    # 0010000000100010 (x[2] ^ x[10] ^ x[14])
+y[7] = x[22]    # 0001000100000001 (x[3] ^ x[7] ^ x[15])
+y[8] = x[28]    # 1000100000001000 (x[0] ^ x[4] ^ x[12])
+y[9] = x[25]    # 0100010001000000 (x[1] ^ x[5] ^ x[9])
+y[10] = x[33]    # 0000001000100010 (x[6] ^ x[10] ^ x[14])
+y[11] = x[34]    # 0001000000010001 (x[3] ^ x[11] ^ x[15])
+y[12] = x[17]    # 1000000010001000 (x[0] ^ x[8] ^ x[12])
+y[13] = x[18]    # 0100010000000100 (x[1] ^ x[5] ^ x[13])
+y[14] = x[26]    # 0010001000100000 (x[2] ^ x[6] ^ x[10])
+y[15] = x[35]    # 0000000100010001 (x[7] ^ x[11] ^ x[15])
